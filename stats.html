@@ -1,0 +1,353 @@
+```html
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Wortiva - الإحصائيات</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="stats.css">
+</head>
+
+<body>
+
+<header class="topbar">
+
+    <div class="logo">
+        Wortiva
+    </div>
+
+    <div class="page-nav">
+
+        <button onclick="window.location.href='index.html'">
+            🏠 الرئيسية
+        </button>
+
+    </div>
+
+</header>
+
+
+<main class="container">
+
+    <section class="hero">
+
+        <p class="small-text">
+            📊 Wortiva
+        </p>
+
+        <h1>
+            إحصائياتك
+        </h1>
+
+        <p>
+            تابع تقدمك في تعلم الكلمات الألمانية
+        </p>
+
+    </section>
+
+
+    <!-- ==================== البطاقات الرئيسية ==================== -->
+
+    <section class="stats-grid">
+
+        <div class="stat-card">
+
+            <div class="stat-icon">
+                📚
+            </div>
+
+            <div class="stat-info">
+
+                <span>
+                    إجمالي الكلمات
+                </span>
+
+                <strong id="totalWords">
+                    0
+                </strong>
+
+            </div>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <div class="stat-icon">
+                🧠
+            </div>
+
+            <div class="stat-info">
+
+                <span>
+                    تمت مراجعتها
+                </span>
+
+                <strong id="reviewedWords">
+                    0
+                </strong>
+
+            </div>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <div class="stat-icon">
+                ✅
+            </div>
+
+            <div class="stat-info">
+
+                <span>
+                    كلمات متقنة
+                </span>
+
+                <strong id="masteredWords">
+                    0
+                </strong>
+
+            </div>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <div class="stat-icon">
+                🔄
+            </div>
+
+            <div class="stat-info">
+
+                <span>
+                    تحتاج مراجعة
+                </span>
+
+                <strong id="needReviewWords">
+                    0
+                </strong>
+
+            </div>
+
+        </div>
+
+    </section>
+
+<section class="xp-stats-card">
+
+    <div class="xp-stats-header">
+        <div class="xp-stats-title">
+            <span class="xp-big-icon">⭐</span>
+
+            <div>
+                <span>إجمالي XP</span>
+                <strong id="statsXP">0</strong>
+            </div>
+        </div>
+
+        <div class="stats-level-box">
+            <span>🏆 المستوى</span>
+            <strong id="statsLevel">1</strong>
+        </div>
+    </div>
+
+    <div class="stats-streak">
+        <span>🔥 Streak</span>
+        <strong id="statsStreak">0 يوم</strong>
+    </div>
+
+    <div class="stats-xp-progress">
+
+        <div class="stats-xp-progress-header">
+            <span>التقدم للمستوى التالي</span>
+
+            <strong>
+                <span id="statsCurrentLevelXP">0</span>
+                /
+                <span id="statsRequiredXP">100</span>
+                XP
+            </strong>
+        </div>
+
+        <div class="stats-xp-bar">
+            <div
+                id="statsXPFill"
+                class="stats-xp-fill">
+            </div>
+        </div>
+
+        <div class="stats-xp-footer">
+            <span id="statsXPPercent">0%</span>
+
+            <span id="statsXPRemaining">
+                100 XP للمستوى التالي
+            </span>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="achievements-card">
+
+    <div class="section-title">
+        <h2>🏅 الإنجازات</h2>
+    </div>
+
+    <div class="achievements-grid">
+
+        <div class="achievement-item" id="achievementFirstTest">
+            <div class="achievement-icon">📝</div>
+            <div class="achievement-info">
+                <strong>أول اختبار</strong>
+                <span>أكمل أول اختبار لك</span>
+            </div>
+            <div class="achievement-status">🔒</div>
+        </div>
+
+        <div class="achievement-item" id="achievement50Words">
+            <div class="achievement-icon">📚</div>
+            <div class="achievement-info">
+                <strong>50 كلمة</strong>
+                <span>راجع 50 كلمة</span>
+            </div>
+            <div class="achievement-status">🔒</div>
+        </div>
+
+        <div class="achievement-item" id="achievement100XP">
+            <div class="achievement-icon">⭐</div>
+            <div class="achievement-info">
+                <strong>100 XP</strong>
+                <span>اجمع 100 نقطة XP</span>
+            </div>
+            <div class="achievement-status">🔒</div>
+        </div>
+
+        <div class="achievement-item" id="achievementStreak3">
+            <div class="achievement-icon">🔥</div>
+            <div class="achievement-info">
+                <strong>3 أيام متتالية</strong>
+                <span>حقق Streak لمدة 3 أيام</span>
+            </div>
+            <div class="achievement-status">🔒</div>
+        </div>
+
+        <div class="achievement-item" id="achievementLevel5">
+            <div class="achievement-icon">🏆</div>
+            <div class="achievement-info">
+                <strong>المستوى 5</strong>
+                <span>وصل إلى Level 5</span>
+            </div>
+            <div class="achievement-status">🔒</div>
+        </div>
+
+        <div class="achievement-item" id="achievementMastered">
+            <div class="achievement-icon">🧠</div>
+            <div class="achievement-info">
+                <strong>أول كلمة متقنة</strong>
+                <span>أتقن أول كلمة</span>
+            </div>
+            <div class="achievement-status">🔒</div>
+        </div>
+
+    </div>
+
+</section>
+
+
+    <!-- ==================== نسبة التقدم ==================== -->
+
+    <section class="progress-card">
+
+        <div class="section-title">
+
+            <h2>
+                📈 نسبة التقدم
+            </h2>
+
+            <strong id="progressPercent">
+                0%
+            </strong>
+
+        </div>
+
+
+        <div class="progress-bar">
+
+            <div
+                id="progressFill"
+                class="progress-fill">
+            </div>
+
+        </div>
+
+        <p id="progressText">
+            ابدأ بمراجعة الكلمات لتحسين تقدمك
+        </p>
+
+    </section>
+
+
+    <!-- ==================== تقدم Kapitel ==================== -->
+
+    <section class="chapters-card">
+
+        <div class="section-title">
+
+            <h2>
+                📖 تقدم Kapitel
+            </h2>
+
+        </div>
+
+        <div id="chapterStats">
+            <!-- يتم إنشاء Kapitel هنا بواسطة JavaScript -->
+        </div>
+
+    </section>
+
+
+    <!-- ==================== مستوى المستخدم ==================== -->
+
+    <section class="level-card">
+
+        <div class="level-icon">
+            🏆
+        </div>
+
+        <div>
+
+            <h2>
+                مستوى التعلم
+            </h2>
+
+            <strong id="userLevel">
+                مبتدئ
+            </strong>
+
+            <p id="levelDescription">
+                ابدأ بمراجعة الكلمات للحصول على تقدم أكبر.
+            </p>
+
+        </div>
+
+    </section>
+
+
+</main>
+
+
+<script src="data/netzwerk-a1.js"></script>
+<script src="progress.js"></script>
+<script src="stats.js"></script>
+
+</body>
+
+</html>
+

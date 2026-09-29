@@ -1,0 +1,248 @@
+```html
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Wortiva - المراجعة الذكية</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="review.css">
+</head>
+
+<body>
+
+<header class="topbar">
+
+    <div class="logo">
+        Wortiva
+    </div>
+
+    <div class="page-nav">
+
+        <button onclick="window.location.href='index.html'">
+            🏠 الرئيسية
+        </button>
+
+    </div>
+
+</header>
+
+
+<main class="container">
+
+    <section class="hero">
+
+        <p class="small-text">
+            🧠 Wortiva
+        </p>
+
+        <h1>
+            المراجعة الذكية
+        </h1>
+
+        <p>
+            راجع الكلمات التي تحتاج إلى تدريب أكثر
+        </p>
+
+    </section>
+
+<!-- اختيار نطاق المراجعة -->
+
+<section class="review-selector">
+
+    <label for="chapterSelect">
+        📚 اختر ما تريد مراجعته
+    </label>
+
+    <select id="chapterSelect">
+
+        <option value="all">
+            🧠 كل كلمات A1
+        </option>
+
+        <option value="1">
+            Kapitel 1
+        </option>
+
+        <option value="2">
+            Kapitel 2
+        </option>
+
+        <option value="3">
+            Kapitel 3
+        </option>
+
+        <option value="4">
+            Kapitel 4
+        </option>
+
+        <option value="5">
+            Kapitel 5
+        </option>
+
+        <option value="6">
+            Kapitel 6
+        </option>
+
+        <option value="7">
+            Kapitel 7
+        </option>
+
+        <option value="8">
+            Kapitel 8
+        </option>
+
+        <option value="9">
+            Kapitel 9
+        </option>
+
+        <option value="10">
+            Kapitel 10
+        </option>
+
+        <option value="11">
+            Kapitel 11
+        </option>
+
+        <option value="12">
+            Kapitel 12
+        </option>
+
+    </select>
+
+</section>
+
+    <section id="reviewArea">
+
+        <div class="review-card">
+
+            <div class="review-progress">
+                <span id="progressText">
+                    كلمة 1
+                </span>
+            </div>
+
+
+            <div class="review-word">
+
+                <span class="review-label">
+                    🇩🇪 الكلمة
+                </span>
+
+              
+<h2 id="germanWord">...</h2>
+<p id="articleWord"></p>
+
+<button id="speakButton" class="speak-button">
+    🔊 اسمع النطق
+</button>
+
+
+
+            </div>
+
+
+            <div id="answerArea" class="answer-area">
+
+                <input
+                    type="text"
+                    id="answerInput"
+                    placeholder="اكتب المعنى بالعربي"
+                    autocomplete="off"
+                >
+
+                <button id="showAnswerButton">
+                    👀 إظهار الإجابة
+                </button>
+
+            </div>
+
+<!-- سؤال الاختيار من متعدد -->
+
+<div
+    id="multipleChoiceArea"
+    class="multiple-choice-area"
+    style="display:none;">
+
+    <p class="question-title">
+        🎯 اختر المعنى الصحيح
+    </p>
+
+    <div id="choiceButtons"></div>
+
+</div>
+
+
+            <div
+                id="correctAnswer"
+                class="correct-answer"
+                style="display:none;">
+
+                <span>
+                    🇸🇦 الإجابة
+                </span>
+
+                <strong id="arabicAnswer">
+                    ...
+                </strong>
+
+            </div>
+
+
+            <div class="review-actions">
+
+                <button
+                    id="againButton"
+                    class="review-again">
+
+                    ❌ محتاج مراجعة
+
+                </button>
+
+                <button
+                    id="knownButton"
+                    class="review-known">
+
+                    ✅ عرفتها
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section
+        id="finishedArea"
+        class="hero"
+        style="display:none;">
+
+        <h2>
+            🎉 خلصت المراجعة!
+        </h2>
+
+        <p id="resultText">
+            أحسنت!
+        </p>
+
+        <button onclick="location.reload()">
+            🔄 مراجعة مرة أخرى
+        </button>
+
+    </section>
+
+</main>
+
+<script src="data/netzwerk-a1.js"></script>
+<script src="progress.js"></script>
+<script src="review.js"></script>
+
+
+</body>
+
+</html>

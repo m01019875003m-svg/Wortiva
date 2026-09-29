@@ -1,0 +1,198 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Wortiva - الاختبارات</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="test.css">
+</head>
+
+<body>
+
+<header class="topbar">
+
+    <div class="logo">
+        Wortiva
+    </div>
+
+    <div class="page-nav">
+
+        <button onclick="window.location.href='index.html'">
+            🏠 الرئيسية
+        </button>
+
+    </div>
+
+</header>
+
+
+<main class="container">
+
+    <!-- ==================== العنوان ==================== -->
+
+    <section class="hero">
+
+        <p class="small-text">
+            📝 Wortiva
+        </p>
+
+        <h1>
+            الاختبارات
+        </h1>
+
+        <p>
+            اختبر نفسك في الكلمات الألمانية
+        </p>
+
+    </section>
+
+
+    <!-- ==================== اختيار Kapitel ==================== -->
+
+    <section class="test-selector">
+
+        <label for="testChapterSelect">
+            📚 اختر الاختبار
+        </label>
+
+        <select id="testChapterSelect">
+
+            <option value="all">
+                🧠 كل كلمات A1
+            </option>
+
+            <option value="1">
+                Kapitel 1
+            </option>
+
+            <option value="2">
+                Kapitel 2
+            </option>
+
+            <option value="3">
+                Kapitel 3
+            </option>
+
+            <option value="4">
+                Kapitel 4
+            </option>
+
+            <option value="5">
+                Kapitel 5
+            </option>
+
+            <option value="6">
+                Kapitel 6
+            </option>
+
+            <option value="7">
+                Kapitel 7
+            </option>
+
+            <option value="8">
+                Kapitel 8
+            </option>
+
+            <option value="9">
+                Kapitel 9
+            </option>
+
+            <option value="10">
+                Kapitel 10
+            </option>
+
+            <option value="11">
+                Kapitel 11
+            </option>
+
+            <option value="12">
+                Kapitel 12
+            </option>
+
+        </select>
+
+    </section>
+
+
+    <!-- ==================== الاختبار ==================== -->
+
+    <section id="testArea">
+
+        <div class="test-card">
+
+            <div class="test-progress">
+
+                <span id="questionProgress">
+                    سؤال 1
+                </span>
+
+            </div>
+
+
+            <div class="test-word">
+
+                <span class="test-label">
+                    🇩🇪 الكلمة
+                </span>
+
+                <h2 id="testGermanWord">
+                    ...
+                </h2>
+
+                <p id="testArticle"></p>
+
+            </div>
+
+
+            <div class="test-question">
+
+                <p>
+                    🎯 اختر المعنى الصحيح
+                </p>
+
+                <div id="testChoices"></div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ==================== النتيجة ==================== -->
+
+    <section
+        id="testFinished"
+        class="hero"
+        style="display:none;">
+
+        <h2>
+            🎉 انتهى الاختبار!
+        </h2>
+
+        <p id="testResult">
+            أحسنت!
+        </p>
+
+        <button id="restartTestButton">
+            🔄 اختبار مرة أخرى
+        </button>
+
+    </section>
+
+</main>
+
+
+<script src="data/netzwerk-a1.js"></script> 
+<script src="progress.js"></script>
+ <script src="test.js"></script>
+ 
+</body>
+
+</html>
+

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Wortiva - البحث</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="topbar">
+
+    <div class="logo">
+        Wortiva
+    </div>
+
+    <div class="page-nav">
+
+        <button onclick="window.location.href='index.html'">
+            🏠 الرئيسية
+        </button>
+
+        <button onclick="window.location.href='search.html'">
+            🔎 البحث
+        </button>
+
+    </div>
+
+</header>
+
+
+    <main class="container">
+
+        <section class="hero">
+
+            <p class="small-text">
+                قاموس Wortiva
+            </p>
+
+            <h1>
+                🔎 ابحث عن كلمة
+            </h1>
+
+            <p>
+                ابحث بالألمانية أو العربية
+            </p>
+
+            <input
+                type="text"
+                id="searchInput"
+                class="search-input"
+                placeholder="اكتب مثلًا: Haus أو منزل"
+                autocomplete="off"
+            >
+
+        </section>
+
+
+        <section id="searchResults" class="search-results">
+
+        </section>
+
+    </main>
+
+
+    <script src="data/netzwerk-a1.js"></script>
+<script src="search.js"></script>
+
+</body>
+
+</html>

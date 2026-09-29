@@ -1,0 +1,601 @@
+
+/* =====================================
+   Wortiva - Statistics
+   ===================================== */
+
+.stats-grid {
+    width: 100%;
+    max-width: 900px;
+    margin: 25px auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+}
+
+.stat-card {
+    background: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 18px;
+    padding: 20px 15px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    box-shadow: 0 5px 15px rgba(15, 23, 42, 0.06);
+}
+
+.stat-icon {
+    font-size: 30px;
+    flex-shrink: 0;
+}
+
+.stat-info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.stat-info span {
+    color: #64748b;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.stat-info strong {
+    color: #1e293b;
+    font-size: 26px;
+}
+
+
+/* =====================================
+   العناوين
+   ===================================== */
+
+.section-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    margin-bottom: 18px;
+}
+
+.section-title h2 {
+    margin: 0;
+    color: #1e293b;
+    font-size: 21px;
+}
+
+.section-title strong {
+    color: #2563eb;
+    font-size: 22px;
+}
+
+
+/* =====================================
+   نسبة التقدم
+   ===================================== */
+
+.progress-card {
+    width: 100%;
+    max-width: 900px;
+    margin: 25px auto;
+    padding: 25px;
+    box-sizing: border-box;
+
+    background: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 20px;
+
+    box-shadow: 0 5px 15px rgba(15, 23, 42, 0.06);
+}
+
+.progress-bar {
+    width: 100%;
+    height: 18px;
+    background: #e2e8f0;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.progress-fill {
+    width: 0%;
+    height: 100%;
+    border-radius: 20px;
+    background: #2563eb;
+    transition: width 0.5s ease;
+}
+
+.progress-card p {
+    margin: 15px 0 0;
+    color: #64748b;
+    font-size: 15px;
+}
+
+
+/* =====================================
+   Kapitel
+   ===================================== */
+
+.chapters-card {
+    width: 100%;
+    max-width: 900px;
+    margin: 25px auto;
+    padding: 25px;
+    box-sizing: border-box;
+
+    background: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 20px;
+
+    box-shadow: 0 5px 15px rgba(15, 23, 42, 0.06);
+}
+
+.chapter-stat {
+    margin-bottom: 22px;
+}
+
+.chapter-stat:last-child {
+    margin-bottom: 0;
+}
+
+.chapter-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.chapter-name {
+    color: #1e293b;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.chapter-percent {
+    color: #2563eb;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.chapter-bar {
+    width: 100%;
+    height: 12px;
+    background: #e2e8f0;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.chapter-fill {
+    height: 100%;
+    width: 0%;
+    border-radius: 20px;
+    background: #2563eb;
+    transition: width 0.5s ease;
+}
+
+.chapter-details {
+    margin-top: 6px;
+    color: #64748b;
+    font-size: 13px;
+}
+
+
+/* =====================================
+   مستوى المستخدم
+   ===================================== */
+
+.level-card {
+    width: 100%;
+    max-width: 900px;
+    margin: 25px auto 40px;
+    padding: 25px;
+    box-sizing: border-box;
+
+    display: flex;
+    align-items: center;
+    gap: 18px;
+
+    background: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 20px;
+
+    box-shadow: 0 5px 15px rgba(15, 23, 42, 0.06);
+}
+
+.level-icon {
+    font-size: 48px;
+}
+
+.level-card h2 {
+    margin: 0 0 6px;
+    color: #1e293b;
+}
+
+.level-card strong {
+    display: block;
+    color: #2563eb;
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+
+.level-card p {
+    margin: 0;
+    color: #64748b;
+    font-size: 14px;
+}
+
+
+/* =====================================
+   الموبايل
+   ===================================== */
+
+@media (max-width: 800px) {
+
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+
+    .stat-card {
+        padding: 16px 12px;
+    }
+
+    .stat-icon {
+        font-size: 26px;
+    }
+
+    .stat-info strong {
+        font-size: 23px;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .stats-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .stat-card {
+        border-radius: 15px;
+    }
+
+    .stat-info span {
+        font-size: 12px;
+    }
+
+    .progress-card,
+    .chapters-card,
+    .level-card {
+        padding: 18px;
+        border-radius: 17px;
+    }
+
+    .section-title h2 {
+        font-size: 18px;
+    }
+
+    .section-title strong {
+        font-size: 19px;
+    }
+
+    .level-card {
+        gap: 12px;
+    }
+
+    .level-icon {
+        font-size: 38px;
+    }
+
+    .level-card h2 {
+        font-size: 18px;
+    }
+
+    .level-card strong {
+        font-size: 20px;
+    }
+}
+
+/* =====================================
+   XP Statistics
+===================================== */
+
+.xp-stats-card {
+    width: 100%;
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 25px;
+    box-sizing: border-box;
+
+    background: white;
+    border-radius: 20px;
+
+    box-shadow:
+        0 8px 25px rgba(15, 23, 42, 0.08);
+}
+
+.xp-stats-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.xp-stats-title {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.xp-big-icon {
+    font-size: 42px;
+}
+
+.xp-stats-title div {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.xp-stats-title span {
+    color: #64748b;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.xp-stats-title strong {
+    color: #2563eb;
+    font-size: 30px;
+}
+
+.stats-level-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 12px 20px;
+
+    border-radius: 15px;
+    background: #f8fafc;
+}
+
+.stats-level-box span {
+    color: #64748b;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.stats-level-box strong {
+    color: #1e293b;
+    font-size: 25px;
+}
+
+.stats-streak {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-top: 22px;
+    padding: 15px 18px;
+
+    border-radius: 14px;
+    background: #fff7ed;
+}
+
+.stats-streak span {
+    color: #9a3412;
+    font-weight: 700;
+}
+
+.stats-streak strong {
+    color: #ea580c;
+    font-size: 18px;
+}
+
+.stats-xp-progress {
+    margin-top: 25px;
+}
+
+.stats-xp-progress-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 10px;
+
+    color: #475569;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.stats-xp-progress-header strong {
+    color: #2563eb;
+}
+
+.stats-xp-bar {
+    width: 100%;
+    height: 15px;
+
+    background: #e2e8f0;
+
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.stats-xp-fill {
+    width: 0%;
+    height: 100%;
+
+    background: #2563eb;
+
+    border-radius: 20px;
+
+    transition: width 0.5s ease;
+}
+
+.stats-xp-footer {
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 9px;
+
+    color: #64748b;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.stats-xp-footer span:first-child {
+    color: #2563eb;
+}
+
+@media (max-width: 600px) {
+
+    .xp-stats-card {
+        padding: 18px;
+    }
+
+    .xp-stats-header {
+        align-items: flex-start;
+    }
+
+    .xp-big-icon {
+        font-size: 34px;
+    }
+
+    .xp-stats-title strong {
+        font-size: 25px;
+    }
+
+    .stats-level-box {
+        padding: 10px 14px;
+    }
+
+    .stats-level-box strong {
+        font-size: 22px;
+    }
+
+    .stats-xp-progress-header {
+        align-items: flex-start;
+        gap: 10px;
+        flex-direction: column;
+    }
+}
+
+/* =====================================
+   Achievements
+===================================== */
+
+.achievements-card {
+    width: 100%;
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 25px;
+    box-sizing: border-box;
+
+    background: white;
+    border-radius: 20px;
+
+    box-shadow:
+        0 8px 25px rgba(15, 23, 42, 0.08);
+}
+
+.achievements-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 15px;
+
+    margin-top: 20px;
+}
+
+.achievement-item {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+
+    padding: 17px;
+
+    border: 2px solid #e2e8f0;
+    border-radius: 16px;
+
+    background: #f8fafc;
+
+    opacity: 0.65;
+
+    transition:
+        transform 0.2s ease,
+        border-color 0.2s ease,
+        background 0.2s ease,
+        opacity 0.2s ease;
+}
+
+.achievement-item.achievement-unlocked {
+    opacity: 1;
+    border-color: #facc15;
+    background: #fffbeb;
+}
+
+.achievement-item:hover {
+    transform: translateY(-2px);
+}
+
+.achievement-icon {
+    width: 48px;
+    height: 48px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    border-radius: 14px;
+
+    background: white;
+
+    font-size: 25px;
+}
+
+.achievement-info {
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 4px;
+}
+
+.achievement-info strong {
+    color: #1e293b;
+    font-size: 16px;
+}
+
+.achievement-info span {
+    color: #64748b;
+    font-size: 13px;
+}
+
+.achievement-status {
+    font-size: 20px;
+}
+
+.achievement-unlocked .achievement-status {
+    transform: scale(1.05);
+}
+
+@media (max-width: 600px) {
+
+    .achievements-card {
+        padding: 18px;
+    }
+
+    .achievements-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .achievement-item {
+        padding: 15px;
+    }
+}
+

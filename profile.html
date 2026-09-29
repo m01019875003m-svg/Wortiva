@@ -1,0 +1,307 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Wortiva - ملفي</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="profile.css"
+    >
+</head>
+
+<body>
+
+<header class="topbar">
+
+    <div class="logo">
+        Wortiva
+    </div>
+
+    <div class="page-nav">
+
+        <button
+            onclick="window.location.href='index.html'"
+        >
+            🏠 الرئيسية
+        </button>
+
+    </div>
+
+</header>
+
+
+<main class="container">
+
+    <!-- عنوان الصفحة -->
+
+    <section class="hero">
+
+        <p class="small-text">
+            👤 Wortiva
+        </p>
+
+        <h1>
+            ملفي
+        </h1>
+
+        <p>
+            تابع مستواك وتقدمك في تعلم الألمانية
+        </p>
+
+    </section>
+
+
+    <!-- المستوى -->
+
+    <section class="profile-level-card">
+
+        <div class="profile-level-icon">
+            🏆
+        </div>
+
+        <div class="profile-level-info">
+
+            <span>
+                مستواك الحالي
+            </span>
+
+            <strong id="profileLevel">
+                1
+            </strong>
+
+            <p>
+                Level
+            </p>
+
+        </div>
+
+        <div class="profile-xp">
+
+            <span>
+                ⭐ XP
+            </span>
+
+            <strong id="profileXP">
+                0
+            </strong>
+
+        </div>
+
+    </section>
+
+
+    <!-- XP + Streak -->
+
+    <section class="profile-progress-card">
+
+        <div class="profile-progress-header">
+
+            <strong>
+                📈 تقدم المستوى
+            </strong>
+
+            <span id="profileXPPercent">
+                0%
+            </span>
+
+        </div>
+
+        <div class="profile-progress-bar">
+
+            <div
+                id="profileXPFill"
+                class="profile-progress-fill"
+            ></div>
+
+        </div>
+
+        <div class="profile-progress-footer">
+
+            <span id="profileCurrentXP">
+                0 XP
+            </span>
+
+            <span id="profileRemainingXP">
+                100 XP للمستوى التالي
+            </span>
+
+        </div>
+
+    </section>
+
+
+    <!-- الإحصائيات -->
+
+    <section class="profile-stats-grid">
+
+        <div class="profile-stat">
+
+            <div>
+                📚
+            </div>
+
+            <span>
+                الكلمات المراجعة
+            </span>
+
+            <strong id="profileReviewed">
+                0
+            </strong>
+
+        </div>
+
+
+        <div class="profile-stat">
+
+            <div>
+                🧠
+            </div>
+
+            <span>
+                الكلمات المتقنة
+            </span>
+
+            <strong id="profileMastered">
+                0
+            </strong>
+
+        </div>
+
+
+        <div class="profile-stat">
+
+            <div>
+                🔥
+            </div>
+
+            <span>
+                Streak
+            </span>
+
+            <strong id="profileStreak">
+                0
+            </strong>
+
+        </div>
+
+
+        <div class="profile-stat">
+
+            <div>
+                🏅
+            </div>
+
+            <span>
+                الإنجازات
+            </span>
+
+            <strong id="profileAchievements">
+                0
+            </strong>
+
+        </div>
+
+    </section>
+
+
+    <!-- تقدم A1 -->
+
+    <section class="profile-a1-card">
+
+        <div class="section-title">
+
+            <h2>
+                🇩🇪 تقدمك في A1
+            </h2>
+
+            <strong id="profileA1Percent">
+                0%
+            </strong>
+
+        </div>
+
+        <div class="profile-a1-bar">
+
+            <div
+                id="profileA1Fill"
+                class="profile-a1-fill"
+            ></div>
+
+        </div>
+
+        <p id="profileA1Text">
+            ابدأ بمراجعة الكلمات لتتبع تقدمك.
+        </p>
+
+    </section>
+
+<section class="profile-chapters-card">
+
+    <div class="section-title">
+        <h2>📖 تقدم Kapitel</h2>
+        <span>12 Kapitel</span>
+    </div>
+
+    <div id="profileChapterProgress"></div>
+
+</section>
+
+
+
+    <!-- معلومات إضافية -->
+
+    <section class="profile-info-card">
+
+        <h2>
+            🎯 استمر في التعلم
+        </h2>
+
+        <p>
+            كل مراجعة واختبار يساعدك على زيادة XP
+            وتحسين مستواك.
+        </p>
+
+        <div class="profile-actions">
+
+            <button
+                onclick="window.location.href='review.html'"
+            >
+                🧠 ابدأ المراجعة
+            </button>
+
+            <button
+                onclick="window.location.href='test.html'"
+            >
+                📝 ابدأ اختبار
+            </button>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<script src="data/netzwerk-a1.js"></script>
+
+<script src="progress.js"></script>
+
+<script src="profile.js"></script>
+
+</body>
+
+</html>

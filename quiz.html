@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Wortiva - الاختبار</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="topbar">
+
+    <div class="logo">
+        Wortiva
+    </div>
+
+    <div class="page-nav">
+
+        <button onclick="window.location.href='index.html'">
+            🏠 الرئيسية
+        </button>
+
+        <button onclick="window.location.href='search.html'">
+            🔎 البحث
+        </button>
+
+        <button onclick="window.location.href='favorites.html'">
+            ⭐ المفضلة
+        </button>
+
+    </div>
+
+</header>
+
+
+    <main class="container">
+
+        <!-- الاختبار -->
+
+        <section id="quizScreen">
+
+            <section class="hero">
+
+                <p class="small-text">
+                    🧠 اختبر معلوماتك
+                </p>
+
+                <h1 id="quizWord">
+                    Haus
+                </h1>
+
+                <p id="quizProgress">
+                    السؤال 1
+                </p>
+
+            </section>
+
+
+            <section class="word-card">
+
+                <h2>
+                    ما معنى الكلمة؟
+                </h2>
+
+                <div id="quizOptions" class="quiz-options">
+                </div>
+
+                <p id="quizResult"></p>
+
+                <button
+                    class="primary-button"
+                    id="nextQuestion"
+                    style="display:none;">
+
+                    السؤال التالي →
+
+                </button>
+
+            </section>
+
+        </section>
+
+
+        <!-- شاشة النتيجة -->
+
+        <section
+            id="resultScreen"
+            style="display:none;">
+
+            <section class="hero">
+
+                <p class="small-text">
+                    🎉 انتهى الاختبار
+                </p>
+
+                <h1>
+                    نتيجتك
+                </h1>
+
+                <div class="result-score">
+
+                    <strong id="finalScore">
+                        0 / 0
+                    </strong>
+
+                    <p id="finalPercentage">
+                        0%
+                    </p>
+
+                </div>
+
+                <div class="result-info">
+
+                    <div>
+                        ⭐
+                        <strong id="earnedXP">
+                            0 XP
+                        </strong>
+                        <span>
+                            XP مكتسب
+                        </span>
+                    </div>
+
+                    <div>
+                        🎯
+                        <strong id="correctAnswers">
+                            0
+                        </strong>
+                        <span>
+                            إجابة صحيحة
+                        </span>
+                    </div>
+
+                </div>
+
+
+                <button
+                    class="primary-button"
+                    id="retryQuiz">
+
+                    🔄 إعادة الاختبار
+
+                </button>
+
+
+                <button
+                    class="secondary-button"
+                    id="homeButton">
+
+                    🏠 الرئيسية
+
+                </button>
+
+            </section>
+
+        </section>
+
+    </main>
+
+
+    <script src="data/words.js"></script>
+    <script src="quiz.js"></script>
+
+</body>
+
+</html>

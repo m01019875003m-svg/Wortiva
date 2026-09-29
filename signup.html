@@ -1,0 +1,120 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Wortiva - إنشاء حساب</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="topbar">
+    <div class="logo">Wortiva</div>
+
+    <div class="page-nav">
+        <button onclick="window.location.href='index.html'">
+            🏠 الرئيسية
+        </button>
+    </div>
+</header>
+
+<main class="container">
+
+    <section class="hero">
+        <p class="small-text">👤 Wortiva</p>
+
+        <h1>إنشاء حساب</h1>
+
+        <p>
+            احفظ تقدمك في Wortiva واستكمل التعلم من أي جهاز.
+        </p>
+    </section>
+
+    <section class="auth-card">
+
+        <h2>📝 حساب جديد</h2>
+
+        <div class="auth-form">
+
+           <label for="signupName">
+    اسم المستخدم
+</label>
+
+<input
+id="signupName"
+type="text"
+placeholder="اكتب اسمك"
+autocomplete="name"
+
+>
+
+<label for="signupPhone">
+    رقم الهاتف
+</label>
+
+<input
+id="signupPhone"
+type="tel"
+placeholder="مثال: 01012345678"
+autocomplete="tel"
+
+>
+
+<label for="signupEmail">
+    البريد الإلكتروني
+</label>
+
+<input
+id="signupEmail"
+type="email"
+placeholder="[example@email.com](mailto:example@email.com)"
+autocomplete="email"
+
+>
+
+<label for="signupPassword">
+    كلمة المرور
+</label>
+
+<input
+id="signupPassword"
+type="password"
+placeholder="كلمة المرور"
+autocomplete="new-password"
+
+>
+
+<button id="signupButton" class="auth-button">
+    إنشاء الحساب
+</button>
+
+<p id="signupMessage" class="auth-message"></p>
+
+<p class="auth-switch">
+    لديك حساب بالفعل؟
+    <button
+        type="button"
+        onclick="window.location.href='login.html'"
+    >
+        تسجيل الدخول
+    </button>
+</p>
+
+        </div>
+
+    </section>
+
+</main>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+<script src="supabase-config.js"></script>
+
+<script src="signup.js"></script>
+</body>
+</html>

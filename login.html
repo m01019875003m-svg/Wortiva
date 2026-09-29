@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+```
+<title>Wortiva - تسجيل الدخول</title>
+
+<link rel="stylesheet" href="style.css">
+```
+
+</head>
+
+<body>
+
+<header class="topbar">
+
+```
+<div class="logo">
+    Wortiva
+</div>
+
+<div class="page-nav">
+
+    <button onclick="window.location.href='index.html'">
+        🏠 الرئيسية
+    </button>
+
+</div>
+```
+
+</header>
+
+<main class="container">
+
+```
+<section class="hero">
+
+    <p class="small-text">
+        👤 Wortiva
+    </p>
+
+    <h1>
+        تسجيل الدخول
+    </h1>
+
+    <p>
+        سجل الدخول لمتابعة تقدمك في Wortiva.
+    </p>
+
+</section>
+
+<section class="auth-card">
+
+    <h2>
+        🔐 تسجيل الدخول
+    </h2>
+
+    <div class="auth-form">
+
+        <label for="loginEmail">
+            البريد الإلكتروني
+        </label>
+
+        <input
+            id="loginEmail"
+            type="email"
+            placeholder="example@email.com"
+            autocomplete="email"
+        >
+
+        <label for="loginPassword">
+            كلمة المرور
+        </label>
+
+        <input
+            id="loginPassword"
+            type="password"
+            placeholder="كلمة المرور"
+            autocomplete="current-password"
+        >
+
+        <button
+            id="loginButton"
+            class="auth-button"
+        >
+            تسجيل الدخول
+        </button>
+
+        <p
+            id="loginMessage"
+            class="auth-message"
+        ></p>
+
+        <p class="auth-switch">
+
+            ليس لديك حساب؟
+
+            <button
+                type="button"
+                onclick="window.location.href='signup.html'"
+            >
+                إنشاء حساب
+            </button>
+
+        </p>
+
+    </div>
+
+</section>
+```
+
+</main>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+<script src="supabase-config.js"></script>
+
+<script src="login.js"></script>
+
+</body>
+
+</html>

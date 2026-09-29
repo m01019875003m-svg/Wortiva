@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Wortiva - كلمات Netzwerk</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#6c5ce7">
+</head>
+
+<body>
+
+    <header class="topbar">
+
+        <div class="logo">
+            Wortiva
+        </div>
+<div id="authArea"></div>
+        <button id="languageButton">
+            العربية
+        </button>
+
+    </header>
+
+
+    <main class="container">
+
+        <section class="hero">
+
+            <p class="small-text">
+                برنامجك لحفظ كلمات Netzwerk
+            </p>
+
+            <h1>
+                أهلاً بك في Wortiva 👋
+            </h1>
+
+            <p>
+                احفظ كلمات Netzwerk وراجعها واختبر نفسك بسهولة.
+            </p>
+
+
+            <button
+                class="primary-button"
+                id="netzwerkButton">
+
+                📚 كلمات Netzwerk
+
+            </button>
+
+<button
+    onclick="window.location.href='review.html'"
+    class="review-home-button">
+
+    🧠 المراجعة الذكية
+
+</button>
+
+
+<button onclick="window.location.href='stats.html'" class="stats-home-button">
+    📊 الإحصائيات
+</button>
+
+<button onclick="window.location.href='test.html'" class="test-home-button">
+    📝 الاختبارات 
+</button>
+<button
+    onclick="window.location.href='profile.html'"
+    class="profile-home-button">
+
+    👤 ملفي
+
+</button>
+
+            <button
+                class="secondary-button"
+                id="searchButton">
+
+                🔎 البحث عن كلمة
+
+            </button>
+
+
+
+        </section>
+
+<!-- ==================== XP + STREAK ==================== -->
+
+<section class="progress-home-card">
+
+    <div class="progress-home-item">
+
+        <div class="progress-home-icon">
+            ⭐
+        </div>
+
+        <div class="progress-home-info">
+
+            <span>
+                XP
+            </span>
+
+            <strong id="homeXP">
+                0
+            </strong>
+
+        </div>
+
+    </div>
+
+
+    <div class="progress-home-divider"></div>
+
+
+    <div class="progress-home-item">
+
+        <div class="progress-home-icon">
+            🔥
+        </div>
+
+        <div class="progress-home-info">
+
+            <span>
+                Streak
+            </span>
+
+            <strong id="homeStreak">
+                0
+            </strong>
+
+            <small>
+                يوم
+            </small>
+
+        </div>
+
+    </div>
+
+
+    <div class="progress-home-divider"></div>
+
+
+    <div class="progress-home-item">
+
+        <div class="progress-home-icon">
+            🏆
+        </div>
+
+        <div class="progress-home-info">
+
+            <span>
+                المستوى
+            </span>
+
+            <strong id="homeLevel">
+                1
+            </strong>
+
+        </div>
+
+    </div>
+<section class="level-progress-home-card">
+
+    <div class="level-progress-header">
+        <div>
+            <span>🏆 المستوى</span>
+            <strong id="homeLevelProgressLevel">1</strong>
+        </div>
+
+        <div class="level-xp-text">
+            <strong id="homeLevelCurrentXP">0</strong>
+            <span>/ <span id="homeLevelNextXP">100</span> XP</span>
+        </div>
+    </div>
+
+    <div class="level-progress-bar">
+        <div
+            id="homeLevelProgressFill"
+            class="level-progress-fill">
+        </div>
+    </div>
+
+    <div class="level-progress-footer">
+        <span id="homeLevelProgressPercent">0%</span>
+        <span id="homeLevelRemaining">100 XP للمستوى التالي</span>
+    </div>
+
+</section>
+
+</section>
+
+        <section class="quick-profile">
+
+            <div>
+
+                <span class="profile-label">
+                    المستوى الحالي
+                </span>
+
+                <strong id="currentLevel">
+                    A1
+                </strong>
+
+            </div>
+
+
+            <div>
+
+                <span class="profile-label">
+                    الكلمات المفضلة
+                </span>
+
+                <strong id="favoriteCount">
+                    0
+                </strong>
+
+            </div>
+
+        </section>
+
+
+        <section class="stats">
+
+            <div class="stat-card">
+
+                <span>🔥</span>
+
+                <strong id="streak">
+                    0
+                </strong>
+
+                <p>
+                    Streak
+                </p>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <span>⭐</span>
+
+                <strong id="xp">
+                    0
+                </strong>
+
+                <p>
+                    XP
+                </p>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <span>📚</span>
+
+                <strong id="words">
+                    0
+                </strong>
+
+                <p>
+                    كلمة محفوظة
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <section class="daily">
+
+            <h2>
+                هدفك اليوم 🎯
+            </h2>
+
+            <p>
+                راجع بعض كلمات Netzwerk اليوم وحافظ على تقدمك.
+            </p>
+
+
+            <div class="progress">
+
+                <div id="progressBar"></div>
+
+            </div>
+
+
+            <p id="progressText">
+                0 / 10 كلمات
+            </p>
+
+        </section>
+<div class="creator-credit">
+    Created by Mohamed Ibrahim Khafagy
+</div>
+    </main>
+
+
+  
+
+<script src="progress.js"></script>
+
+<script>
+    const progress = getProgressData();
+    const levelProgress = getLevelProgress();
+
+    document.getElementById("homeXP").textContent =
+        progress.xp;
+
+    document.getElementById("homeStreak").textContent =
+        progress.streak;
+
+    document.getElementById("homeLevel").textContent =
+        progress.level;
+
+    document.getElementById("homeLevelProgressLevel").textContent =
+        levelProgress.currentLevel;
+
+    document.getElementById("homeLevelCurrentXP").textContent =
+        levelProgress.xpInLevel;
+
+    document.getElementById("homeLevelNextXP").textContent =
+        levelProgress.xpNeeded;
+
+    document.getElementById("homeLevelProgressFill").style.width =
+        levelProgress.percentage + "%";
+
+    document.getElementById("homeLevelProgressPercent").textContent =
+        levelProgress.percentage + "%";
+
+    const remainingXP =
+        levelProgress.xpNeeded -
+        levelProgress.xpInLevel;
+
+    document.getElementById("homeLevelRemaining").textContent =
+        remainingXP > 0
+            ? `${remainingXP} XP للمستوى التالي`
+            : "🎉 وصلت للمستوى التالي!";
+</script>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+<script src="supabase-config.js"></script>
+<script src="database.js"></script>
+<script src="auth.js"></script>
+<script src="app.js"></script>
+<script src="progress.js"></script>
+<script>
+    if ("serviceWorker" in navigator) {
+        window.addEventListener("load", function () {
+            navigator.serviceWorker.register("./sw.js")
+                .then(function () {
+                    console.log("Wortiva Service Worker registered");
+                })
+                .catch(function (error) {
+                    console.error("Service Worker error:", error);
+                });
+        });
+    }
+</script>
+</body>
+</html>

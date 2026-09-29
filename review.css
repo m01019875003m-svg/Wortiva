@@ -1,0 +1,355 @@
+
+/* =====================================
+   Wortiva - Smart Review
+   ===================================== */
+
+.review-card {
+    width: 100%;
+    max-width: 650px;
+    margin: 30px auto;
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 24px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.10);
+    text-align: center;
+}
+
+
+/* التقدم */
+
+.review-progress {
+    margin-bottom: 25px;
+    color: #64748b;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+
+/* الكلمة */
+
+.review-word {
+    margin-bottom: 30px;
+}
+
+.review-label {
+    display: block;
+    margin-bottom: 10px;
+    color: #64748b;
+    font-size: 15px;
+}
+
+.review-word h2 {
+    margin: 5px 0;
+    font-size: 42px;
+    direction: ltr;
+}
+
+#articleWord {
+    margin: 5px 0;
+    color: #2563eb;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+
+/* خانة الإجابة */
+
+.answer-area {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+#answerInput {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 15px 18px;
+    border: 2px solid #e2e8f0;
+    border-radius: 14px;
+    outline: none;
+    font-size: 17px;
+    text-align: center;
+    direction: rtl;
+    transition: border-color 0.2s ease;
+}
+
+#answerInput:focus {
+    border-color: #2563eb;
+}
+
+
+/* زر إظهار الإجابة */
+
+#showAnswerButton {
+    width: 100%;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 14px;
+    background: #2563eb;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+#showAnswerButton:hover {
+    transform: translateY(-2px);
+}
+
+
+/* الإجابة */
+
+.correct-answer {
+    margin-top: 20px;
+    padding: 18px;
+    background: #f1f5f9;
+    border-radius: 16px;
+}
+
+.correct-answer span {
+    display: block;
+    margin-bottom: 8px;
+    color: #64748b;
+    font-size: 14px;
+}
+
+.correct-answer strong {
+    display: block;
+    font-size: 23px;
+}
+
+
+/* أزرار المراجعة */
+
+.review-actions {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.review-actions button {
+    padding: 15px 12px;
+    border: none;
+    border-radius: 14px;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.review-actions button:hover {
+    transform: translateY(-2px);
+}
+
+.review-again {
+    background: #dc2626;
+}
+
+.review-known {
+    background: #16a34a;
+}
+
+
+/* شاشة النهاية */
+
+#finishedArea {
+    max-width: 650px;
+    margin: 40px auto;
+    padding: 35px 20px;
+    background: white;
+    border-radius: 24px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.10);
+    text-align: center;
+}
+
+#finishedArea button {
+    margin-top: 20px;
+    padding: 14px 25px;
+    border: none;
+    border-radius: 14px;
+    background: #2563eb;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+
+/* الموبايل */
+
+@media (max-width: 600px) {
+
+    .review-card {
+        margin: 20px 10px;
+        padding: 22px 16px;
+        border-radius: 20px;
+    }
+
+    .review-word h2 {
+        font-size: 34px;
+    }
+
+    #articleWord {
+        font-size: 18px;
+    }
+
+    #answerInput {
+        font-size: 16px;
+        padding: 14px;
+    }
+
+    .review-actions {
+        grid-template-columns: 1fr;
+    }
+
+    .review-actions button {
+        padding: 14px;
+    }
+
+}
+/* =====================================
+   اختيار Kapitel للمراجعة
+   ===================================== */
+
+.review-selector {
+    width: 100%;
+    max-width: 650px;
+    margin: 20px auto;
+    padding: 0 10px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.review-selector label {
+    display: block;
+    margin-bottom: 10px;
+    color: #475569;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+#chapterSelect {
+    width: 100%;
+    max-width: 500px;
+    padding: 14px 18px;
+
+    border: 2px solid #e2e8f0;
+    border-radius: 14px;
+
+    background: white;
+    color: #1e293b;
+
+    font-size: 16px;
+    font-weight: 600;
+
+    outline: none;
+    cursor: pointer;
+}
+
+#chapterSelect:focus {
+    border-color: #2563eb;
+}
+
+/* =====================================
+   الاختيار من متعدد
+   ===================================== */
+
+.multiple-choice-area {
+    margin-top: 25px;
+}
+
+.question-title {
+    margin-bottom: 15px;
+    color: #475569;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+#choiceButtons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+}
+
+.choice-button {
+    padding: 15px 12px;
+    border: 2px solid #e2e8f0;
+    border-radius: 14px;
+
+    background: white;
+    color: #1e293b;
+
+    font-size: 16px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition:
+        transform 0.2s ease,
+        border-color 0.2s ease,
+        background 0.2s ease;
+}
+
+.choice-button:hover {
+    transform: translateY(-2px);
+    border-color: #2563eb;
+}
+
+.choice-button:disabled {
+    cursor: default;
+}
+
+.correct-choice {
+    border-color: #16a34a !important;
+    background: #dcfce7 !important;
+}
+
+.wrong-choice {
+    border-color: #dc2626 !important;
+    background: #fee2e2 !important;
+}
+
+
+@media (max-width: 600px) {
+
+    #choiceButtons {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+.speak-button {
+    display: block;
+    margin: 15px auto 0;
+    padding: 11px 20px;
+    border: none;
+    border-radius: 12px;
+    background: #f1f5f9;
+    color: #1e293b;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.speak-button:hover {
+    transform: translateY(-2px);
+    background: #e2e8f0;
+}
+
+.speak-button:active {
+    transform: translateY(0);
+}
+
+@media (max-width: 600px) {
+    .speak-button {
+        width: 100%;
+        margin-top: 12px;
+    }
+}
+
+

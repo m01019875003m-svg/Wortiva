@@ -1,0 +1,254 @@
+
+/* =====================================
+   Wortiva - الاختبارات
+   ===================================== */
+
+.test-selector {
+    width: 100%;
+    max-width: 650px;
+    margin: 20px auto;
+    padding: 0 10px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.test-selector label {
+    display: block;
+    margin-bottom: 10px;
+    color: #475569;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+#testChapterSelect {
+    width: 100%;
+    max-width: 500px;
+    padding: 14px 18px;
+
+    border: 2px solid #e2e8f0;
+    border-radius: 14px;
+
+    background: white;
+    color: #1e293b;
+
+    font-size: 16px;
+    font-weight: 600;
+
+    outline: none;
+    cursor: pointer;
+}
+
+#testChapterSelect:focus {
+    border-color: #2563eb;
+}
+
+
+/* =====================================
+   كارت الاختبار
+   ===================================== */
+
+.test-card {
+    width: 100%;
+    max-width: 700px;
+    margin: 30px auto;
+    padding: 30px;
+
+    box-sizing: border-box;
+
+    background: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 22px;
+
+    box-shadow:
+        0 8px 25px rgba(15, 23, 42, 0.08);
+}
+
+
+/* =====================================
+   التقدم
+   ===================================== */
+
+.test-progress {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#questionProgress {
+    display: inline-block;
+
+    padding: 8px 16px;
+
+    background: #eff6ff;
+    color: #2563eb;
+
+    border-radius: 20px;
+
+    font-size: 14px;
+    font-weight: 700;
+}
+
+
+/* =====================================
+   الكلمة
+   ===================================== */
+
+.test-word {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.test-label {
+    display: block;
+
+    margin-bottom: 10px;
+
+    color: #64748b;
+
+    font-size: 15px;
+    font-weight: 700;
+}
+
+#testGermanWord {
+    margin: 0;
+
+    color: #1e293b;
+
+    font-size: 38px;
+    font-weight: 800;
+}
+
+#testArticle {
+    margin: 8px 0 0;
+
+    color: #2563eb;
+
+    font-size: 20px;
+    font-weight: 700;
+}
+
+
+/* =====================================
+   السؤال
+   ===================================== */
+
+.test-question {
+    text-align: center;
+}
+
+.test-question > p {
+    margin-bottom: 18px;
+
+    color: #475569;
+
+    font-size: 17px;
+    font-weight: 700;
+}
+
+
+/* =====================================
+   الاختيارات
+   ===================================== */
+
+#testChoices {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 14px;
+}
+
+.test-choice {
+    width: 100%;
+
+    padding: 17px 14px;
+
+    border: 2px solid #e2e8f0;
+    border-radius: 15px;
+
+    background: white;
+    color: #1e293b;
+
+    font-size: 16px;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition:
+        transform 0.2s ease,
+        border-color 0.2s ease,
+        background 0.2s ease;
+}
+
+.test-choice:hover {
+    transform: translateY(-2px);
+    border-color: #2563eb;
+}
+
+.test-choice:disabled {
+    cursor: default;
+}
+
+.test-choice.correct {
+    border-color: #16a34a;
+    background: #dcfce7;
+    color: #166534;
+}
+
+.test-choice.wrong {
+    border-color: #dc2626;
+    background: #fee2e2;
+    color: #991b1b;
+}
+
+
+/* =====================================
+   زر إعادة الاختبار
+   ===================================== */
+
+#restartTestButton {
+    margin-top: 20px;
+
+    padding: 14px 25px;
+
+    border: none;
+    border-radius: 14px;
+
+    background: #2563eb;
+    color: white;
+
+    font-size: 16px;
+    font-weight: 700;
+
+    cursor: pointer;
+}
+
+#restartTestButton:hover {
+    transform: translateY(-2px);
+}
+
+
+/* =====================================
+   الموبايل
+   ===================================== */
+
+@media (max-width: 600px) {
+
+    .test-card {
+        padding: 20px;
+        border-radius: 18px;
+    }
+
+    #testGermanWord {
+        font-size: 30px;
+    }
+
+    #testChoices {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .test-choice {
+        padding: 15px 12px;
+    }
+
+}

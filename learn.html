@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Wortiva - التعلم</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    
+<header class="topbar">
+
+    <div class="logo">
+        Wortiva
+    </div>
+
+    <div class="page-nav">
+
+        <button id="backButton">
+            ← الفئات
+        </button>
+
+        <button onclick="window.location.href='index.html'">
+            🏠 الرئيسية
+        </button>
+
+        <button onclick="window.location.href='search.html'">
+            🔎 البحث
+        </button>
+
+        <button onclick="window.location.href='favorites.html'">
+            ⭐ المفضلة
+        </button>
+
+    </div>
+
+</header>
+
+    <main class="container">
+
+        <section class="hero">
+
+            <p class="small-text" id="categoryName">
+                الفئة
+            </p>
+
+            <h1 id="germanWord">
+                Haus
+            </h1>
+
+            <h2 id="arabicMeaning">
+                منزل
+            </h2>
+<div class="word-image" id="wordImage">
+    🏠
+</div>
+            <div class="word-card">
+                <div class="word-info">
+
+    <div class="word-detail">
+        <span>📚 الجمع</span>
+
+        <div class="detail-action">
+
+            <strong id="wordDetails">-</strong>
+
+            <button
+                id="speakPlural"
+                class="small-speak">
+
+                🔊
+
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <div class="word-detail">
+
+        <span>📝 النوع</span>
+
+        <strong id="wordType">-</strong>
+
+    </div>
+
+
+    <div class="word-detail">
+
+        <span>🔤 النطق</span>
+
+        <strong id="pronunciation">-</strong>
+
+    </div>
+
+
+    <div class="word-detail">
+
+        <span>⭐ الصعوبة</span>
+
+        <strong id="difficulty">-</strong>
+
+    </div>
+
+</div>
+
+<button class="primary-button" id="speakButton">
+    🔊 اسمع الكلمة
+</button>
+<button class="favorite-button" id="favoriteButton">
+    ☆ أضف للمفضلة
+</button>
+                <hr>
+
+                <div class="example-box">
+
+                    <p id="example"></p>
+
+                    <p id="translation"></p>
+
+                </div>
+
+       <div class="learning-actions">
+
+    <button
+        class="know-button"
+        id="knownWord">
+        ✅ عرفتها
+    </button>
+
+    <button
+        class="unknown-button"
+        id="unknownWord">
+        ❌ لم أعرفها
+    </button>
+
+</div>
+
+<button
+    class="primary-button"
+    id="nextWord"
+    disabled>
+    الكلمة التالية →
+</button>
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <script src="data/words.js"></script>
+    <script src="app.js"></script>
+
+</body>
+
+</html>

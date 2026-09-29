@@ -1,0 +1,565 @@
+
+/* ==================================
+   Wortiva - Profile
+===================================== */
+
+.profile-level-card,
+.profile-progress-card,
+.profile-a1-card,
+.profile-info-card {
+
+    width: 100%;
+    max-width: 900px;
+
+    margin: 20px auto;
+
+    padding: 25px;
+
+    box-sizing: border-box;
+
+    background: white;
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 8px 25px rgba(15, 23, 42, 0.08);
+}
+
+
+/* =====================================
+   Level
+===================================== */
+
+.profile-level-card {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 18px;
+}
+
+.profile-level-icon {
+
+    width: 70px;
+    height: 70px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    border-radius: 20px;
+
+    background: #fef3c7;
+
+    font-size: 38px;
+}
+
+.profile-level-info {
+
+    flex: 1;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 3px;
+}
+
+.profile-level-info span {
+
+    color: #64748b;
+
+    font-size: 14px;
+}
+
+.profile-level-info strong {
+
+    color: #1e293b;
+
+    font-size: 32px;
+}
+
+.profile-level-info p {
+
+    margin: 0;
+
+    color: #94a3b8;
+
+    font-size: 12px;
+}
+
+.profile-xp {
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: 4px;
+}
+
+.profile-xp span {
+
+    color: #64748b;
+
+    font-size: 13px;
+}
+
+.profile-xp strong {
+
+    color: #2563eb;
+
+    font-size: 25px;
+}
+
+
+/* =====================================
+   XP Progress
+===================================== */
+
+.profile-progress-header {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    margin-bottom: 12px;
+}
+
+.profile-progress-header strong {
+
+    color: #1e293b;
+}
+
+.profile-progress-header span {
+
+    color: #2563eb;
+
+    font-weight: 700;
+}
+
+.profile-progress-bar,
+.profile-a1-bar {
+
+    width: 100%;
+
+    height: 15px;
+
+    overflow: hidden;
+
+    border-radius: 20px;
+
+    background: #e2e8f0;
+}
+
+.profile-progress-fill,
+.profile-a1-fill {
+
+    width: 0%;
+
+    height: 100%;
+
+    border-radius: 20px;
+
+    background: #2563eb;
+
+    transition: width 0.5s ease;
+}
+
+.profile-progress-footer {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    margin-top: 9px;
+
+    color: #64748b;
+
+    font-size: 13px;
+
+    font-weight: 600;
+}
+
+
+/* =====================================
+   Stats
+===================================== */
+
+.profile-stats-grid {
+
+    width: 100%;
+
+    max-width: 900px;
+
+    margin: 20px auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 15px;
+}
+
+.profile-stat {
+
+    padding: 20px;
+
+    background: white;
+
+    border-radius: 18px;
+
+    text-align: center;
+
+    box-shadow:
+        0 8px 25px rgba(15, 23, 42, 0.07);
+}
+
+.profile-stat div {
+
+    font-size: 28px;
+
+    margin-bottom: 8px;
+}
+
+.profile-stat span {
+
+    display: block;
+
+    color: #64748b;
+
+    font-size: 13px;
+
+    font-weight: 600;
+}
+
+.profile-stat strong {
+
+    display: block;
+
+    margin-top: 6px;
+
+    color: #1e293b;
+
+    font-size: 24px;
+}
+
+
+/* =====================================
+   A1
+===================================== */
+
+.profile-a1-card .section-title {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+.profile-a1-card .section-title strong {
+
+    color: #2563eb;
+}
+
+.profile-a1-bar {
+
+    margin-top: 15px;
+}
+
+.profile-a1-fill {
+
+    background: #16a34a;
+}
+
+.profile-a1-card p {
+
+    margin-bottom: 0;
+
+    color: #64748b;
+
+    font-size: 14px;
+}
+
+
+/* =====================================
+   Info
+===================================== */
+
+.profile-info-card {
+
+    text-align: center;
+}
+
+.profile-info-card h2 {
+
+    color: #1e293b;
+}
+
+.profile-info-card p {
+
+    color: #64748b;
+
+    line-height: 1.8;
+}
+
+.profile-actions {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 12px;
+
+    margin-top: 20px;
+}
+
+.profile-actions button {
+
+    padding: 12px 20px;
+
+    border: none;
+
+    border-radius: 12px;
+
+    background: #2563eb;
+
+    color: white;
+
+    font-size: 15px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: transform 0.2s ease;
+}
+
+.profile-actions button:hover {
+
+    transform: translateY(-2px);
+}
+
+
+/* =====================================
+   Mobile
+===================================== */
+
+@media (max-width: 700px) {
+
+    .profile-level-card {
+
+        padding: 18px;
+    }
+
+    .profile-level-icon {
+
+        width: 55px;
+        height: 55px;
+
+        font-size: 30px;
+    }
+
+    .profile-level-info strong {
+
+        font-size: 26px;
+    }
+
+    .profile-xp strong {
+
+        font-size: 21px;
+    }
+
+    .profile-stats-grid {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+    .profile-actions {
+
+        flex-direction: column;
+    }
+
+    .profile-actions button {
+
+        width: 100%;
+    }
+}
+
+/* =====================================
+   Kapitel Progress
+===================================== */
+
+.profile-chapters-card {
+
+    width: 100%;
+    max-width: 900px;
+
+    margin: 20px auto;
+
+    padding: 25px;
+
+    box-sizing: border-box;
+
+    background: white;
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 8px 25px rgba(15, 23, 42, 0.08);
+}
+
+.profile-chapters-card .section-title {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 20px;
+}
+
+.profile-chapters-card .section-title h2 {
+
+    margin: 0;
+
+    color: #1e293b;
+}
+
+.profile-chapters-card .section-title span {
+
+    color: #64748b;
+
+    font-size: 14px;
+
+    font-weight: 600;
+}
+
+
+/* كل Kapitel */
+
+.profile-chapter-item {
+
+    padding: 17px 0;
+
+    border-bottom:
+        1px solid #e2e8f0;
+}
+
+.profile-chapter-item:last-child {
+
+    border-bottom: none;
+
+    padding-bottom: 0;
+}
+
+.profile-chapter-header {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 9px;
+}
+
+.profile-chapter-header strong {
+
+    color: #1e293b;
+
+    font-size: 16px;
+}
+
+.profile-chapter-header span {
+
+    color: #64748b;
+
+    font-size: 13px;
+}
+
+
+/* شريط التقدم */
+
+.profile-chapter-bar {
+
+    width: 100%;
+
+    height: 11px;
+
+    background: #e2e8f0;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+}
+
+.profile-chapter-fill {
+
+    height: 100%;
+
+    background: #16a34a;
+
+    border-radius: 20px;
+
+    transition:
+        width 0.5s ease;
+}
+
+
+/* أسفل الشريط */
+
+.profile-chapter-footer {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    margin-top: 7px;
+
+    color: #64748b;
+
+    font-size: 12px;
+
+    font-weight: 600;
+}
+
+.profile-chapter-footer span:first-child {
+
+    color: #16a34a;
+}
+
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+    .profile-chapters-card {
+
+        padding: 18px;
+    }
+
+    .profile-chapter-item {
+
+        padding: 15px 0;
+    }
+
+    .profile-chapter-header strong {
+
+        font-size: 15px;
+    }
+
+    .profile-chapter-header span {
+
+        font-size: 12px;
+    }
+}
